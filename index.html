@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Grey+Qo&display=swap" rel="stylesheet">
+    
+</head>
+
+
+
+
+<body>
+    <nav class="navbar navbar-expand-lg    ">
+        <div class="container-fluid fixed-top navbar-light opacity-50 bg-light" ">
+            <img src=" images/logoo.png" class="img-fluid w-auto" alt="" srcset=""> <a class="navbar-brand"
+                href="#">Bakery</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link border-end" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown border border-2 rounded-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Sections
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Breads</a></li>
+                            <li><a class="dropdown-item" href="#">Sweets</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Sweets</a></li>
+                            <li><a class="dropdown-item" href="#">Sweets</a></li>
+
+                            <li><a class="dropdown-item" href="#">Sweets</a></li>
+                            <li><a class="dropdown-item" href="#">Sweets</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Link</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline me-3" type="submit">Search</button>
+                    <button type="button" class="btn btn-outline" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Login
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- Button trigger modal -->
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header  " style="background-color: var(--main-bg-color);">
+                        <h5 class="modal-title" id="staticBackdropLabel " style="color: var(--main-text-color);">login
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body mt-2" style="color: var(--main-bg-color);">
+                        <form>
+                            <div class="form-group">
+                                <label for="modalEmail">Email address:</label>
+                                <input type="email" class="form-control" id="modalEmail" placeholder="Enter email">
+                                <label class="lead fw-light" style="font-size: 17px;"> we will never share your email for
+                                    sure</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="modalPassword">Password:</label>
+                                <input type="password" class="form-control" id="modalPassword"
+                                    placeholder="Enter password">
+                            </div>
+                            <div class="form-group form-check m-2">
+                                <input type="checkbox" class="form-check-input" id="modalRememberMe">
+                                <label class="form-check-label" for="modalRememberMe">Remember me</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-between">
+                        <button type="button" class="btn btn-outline" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Login
+                        </button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-bs-dismiss="modal"
+                            aria-label="Close">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+    </nav>
+    <header>
+
+        <!-- Home section -->
+        <div id="carouselExampleCaptions" class="carousel slide  " data-bs-ride="carousel"> 
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/bg1.jpg" class="d-block w-100 "  alt="...">
+                    <div class="carousel-caption">
+                        <div class="card">
+                            <div class="card-body d-md-block text-light">
+                                <h2>My Bakery Shop</h2>
+                                <p>Welcome to My Bakery Shop, where we offer freshly baked goods made with love and the
+                                    finest ingredients.</p>
+                                <button class="btn btn-outline p-2 px-5  " type="submit">Login</button>
+                            </div>
+                        </div>
+                        <div class="carousel-indicators m-3">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/bg11.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <div class="card">
+                            <div class="card-body d-md-block text-light">
+                                <h2>My Bakery Shop</h2>
+                                <p>Welcome to My Bakery Shop, where we offer freshly baked goods made with love and the
+                                    finest ingredients. </p>
+                                <button class="btn btn-outline p-2  px-5  " type="submit">Login</button>
+                            </div>
+                        </div>
+                        <div class="carousel-indicators m-3">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/bg12.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <div class="card">
+                            <div class="card-body d-md-block text-light">
+                                <h2>My Bakery Shop</h2>
+                                <p>Welcome to My Bakery Shop, where we offer freshly baked goods made with love and the
+                                    finest ingredients. </p>
+                                <button class="btn btn-outline p-2  px-5  " type="submit">Login</button>
+                            </div>
+                        </div>
+                        <div class="carousel-indicators m-3">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="welcome shadow-lg " style="background-color: var( --sec-bg-color);">
+            <div class="mx-5 py-3 text-light">
+                <h3>welcome</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat iste, expedita quam sequi soluta
+                    omnis voluptatum numquam velit obcaecati praesentium labore. Quisquam, accusantium? Soluta tenetur
+                    vero ab non quidem ipsum.</p>
+                <div class="btn btn-outline"> learn more</div>
+            </div>
+
+        </div>
+        <hr>
+        <div class=" py-5  d-flex align-items-center justify-content-center shadow-lg mb-2"
+            style="background: var(--thir-bg-color);">
+            <h2>we offer the best!</h2>
+
+        </div>
+
+
+    </header>
+
+    <section>
+        <div class="social-icons d-flex flex-column position-fixed end-0 top-50 translate-middle-y py-4">
+            <div class="icons me-3 rounded-circle border-1 d-flex align-items-center justify-content-center mb-3"><i
+                    class="fab  fa-facebook-f  fs-4"></i></div>
+            <div class="icons me-3 rounded-circle border-1 d-flex align-items-center justify-content-center mb-3"><i
+                    class="fab  fa-instagram  fs-3 "></i></div>
+            <div class="icons me-3 rounded-circle border-1 d-flex align-items-center justify-content-center mb-3"><i
+                    class="fab  fa-twitter  fs-3 "></i></div>
+            <div class="icons me-3 rounded-circle border-1 d-flex align-items-center justify-content-center mb-3"><i
+                    class="fab  fa-youtube fs-3 "></i></div>
+            <div class="icons me-3 rounded-circle border-1 d-flex align-items-center justify-content-center"><i
+                    class="fab  fa-linkedin   fs-3 "></i></div>
+        </div>
+        <div class="accordion my-1" id="accordionExample">
+            <div class="accordion-item ">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button shadow-lg btn-outline" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        My Bakery Shop </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed shadow-lg btn-outline " type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo">
+                        My Bakery Shop </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed shadow-lg btn-outline" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseThree">
+                        my bakery shop </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-2 h-100" style="background: var(--main-bg-color);">
+            <div class="translate-box shadow-lg" style="background: var(--sec-bg-color); padding-bottom: 20px; ">
+                <h2 class="py-2 d-flex justify-content-center btn-outline">let's make our first order!</h2>
+                <p class="ms-3 text-light">Write and order <a href="#" class="btn-outline-danger">Press Here</a></p>
+                <button type="button" id="copied1" class="btn btn-outline-light mx-3 shadow-lg" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-original-title="order now"
+                    onclick="showAlertAndChangeTooltip('copied1')">
+                    write your order
+                </button>
+                <textarea class="form-control mt-2" id="outputText1" rows="3"
+                    placeholder="order will appear here"></textarea>
+            </div>
+        </div>
+
+        <hr>
+        <div class="container-fluid mt-2 h-100" style="background: var(--main-bg-color);">
+            <div class="translate-box shadow-lg" style="background: var(--sec-bg-color); padding-bottom: 20px; ">
+                <h2 class="py-2 d-flex justify-content-center btn-outline">let's make our first order!</h2>
+                <p class="ms-3 text-light">Write and order <a href="#" class="btn-outline-danger">Press Here</a></p>
+                <button type="button" id="copied2" class="btn btn-outline-light mx-3 shadow-lg" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-original-title="order now"
+                    onclick="showAlertAndChangeTooltip('copied2')">
+                    write your order
+                </button>
+                <textarea class="form-control mt-2" id="outputText2" rows="3"
+                    placeholder="order will appear here"></textarea>
+            </div>
+        </div>
+
+        <hr>
+        <div class="container-fluid mt-2 h-100" style="background: var(--main-bg-color);">
+            <div class="translate-box shadow-lg" style="background: var(--sec-bg-color); padding-bottom: 20px; ">
+                <h2 class="py-2 d-flex justify-content-center btn-outline">let's make our first order!</h2>
+                <p class="ms-3 text-light">Write and order <a href="#" class="btn-outline-danger">Press Here</a></p>
+                <button type="button" id="copied3" class="btn btn-outline-light mx-3 shadow-lg" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-original-title="order now"
+                    onclick="showAlertAndChangeTooltip('copied3')">
+                    write your order
+                </button>
+                <textarea class="form-control mt-2" id="outputText3" rows="3"
+                    placeholder="order will appear here"></textarea>
+            </div>
+        </div>
+
+        <hr>
+        <div class="backgrond ">
+
+        </div>
+        <div class=" py-4 d-flex align-items-center justify-content-center shadow-lg mb-2 w-100"
+            style="background: var(--thir-bg-color);">
+            <h2>check our new colliction</h2>
+
+        </div>
+
+
+    </section>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 py-4 gy-5">
+            <div class="col-12 col-md-4 mx-auto">
+                <div class="card w-100 shadow shado">
+                    <img src="images/whole-wheat-sandwich-bread-2.jpg" class="card-img-top shadow-lg p-1" style="height: 300px;" alt="...">
+                    <div class="card-body d-flex flex-wrap justify-content-between align-items-center">
+                        <h6 class="card-title">Delicious Cake</h6>
+                        <button type="button" class="btn btn-outline">
+                            Order
+                        </button>
+                        <p class="card-text">This cake is made with the finest ingredients</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mx-auto">
+                <div class="card w-100 shadow shado">
+                    <img src="images/bread-portrait.jpg" class="card-img-top shadow-lg p-1" style="height: 300px;" alt="...">
+                    <div class="card-body d-flex flex-wrap justify-content-between align-items-center">
+                        <h6 class="card-title">Delicious Cake</h6>
+                        <button type="button" class="btn btn-outline">
+                            Order
+                        </button>
+                        <p class="card-text">This cake is made with the finest ingredients</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mx-auto">
+                <div class="card w-100 shadow shado">
+                    <img src="images/images (1).jpeg" class="card-img-top shadow-lg p-1" style="height: 300px;" alt="...">
+                    <div class="card-body d-flex flex-wrap justify-content-between align-items-center">
+                        <h6 class="card-title">Delicious Cake</h6>
+                        <button type="button" class="btn btn-outline">
+                            Order
+                        </button>
+                        <p class="card-text">This cake is made with the finest ingredients</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mx-auto">
+                <div class="card w-100 shadow shado">
+                    <img src="images/bread-portrait.jpg" class="card-img-top shadow-lg p-1" style="height: 300px;" alt="...">
+                    <div class="card-body d-flex flex-wrap justify-content-between align-items-center">
+                        <h6 class="card-title">Delicious Cake</h6>
+                        <button type="button" class="btn btn-outline">
+                            Order
+                        </button>
+                        <p class="card-text">This cake is made with the finest ingredients</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mx-auto">
+                <div class="card w-100 shadow shado">
+                    <img src="images/images (1).jpeg" class="card-img-top shadow-lg p-1" style="height: 300px;" alt="...">
+                    <div class="card-body d-flex flex-wrap justify-content-between align-items-center">
+                        <h6 class="card-title">Delicious Cake</h6>
+                        <button type="button" class="btn btn-outline">
+                            Order
+                        </button>
+                        <p class="card-text">This cake is made with the finest ingredients</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mx-auto">
+                <div class="card w-100 shadow shado">
+                    <img src="images/asset7.jpeg" class="card-img-top shadow-lg p-1" style="height: 300px;" alt="...">
+                    <div class="card-body d-flex flex-wrap justify-content-between align-items-center">
+                        <h6 class="card-title">Delicious Cake</h6>
+                        <button type="button" class="btn btn-outline">
+                            Order
+                        </button>
+                        <p class="card-text">This cake is made with the finest ingredients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container py-4 mx-sm-auto">
+            <div class="row justify-content-between">
+                <div class="col-12 col-md-4 mx-auto">
+                    <div class="card w-100 shadow shado">
+                        <img src="images/bread-portrait.jpg" class="card-img-top shadow-lg p-1" style="height: 300px;" alt="...">
+                        <div class="card-body d-flex flex-wrap justify-content-between align-items-center">
+                            <h6 class="card-title">Delicious Cake</h6>
+                            <button type="button" class="btn btn-outline">
+                                Order
+                            </button>
+                            <p class="card-text">This cake is made with the finest ingredients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mx-auto">
+                    <div class="card w-100 shadow shado">
+                        <img src="images/asset7.jpeg" class="card-img-top shadow-lg p-1" style="height: 300px;" alt="...">
+                        <div class="card-body d-flex flex-wrap justify-content-between align-items-center">
+                            <h6 class="card-title">Delicious Cake</h6>
+                            <button type="button" class="btn btn-outline">
+                                Order
+                            </button>
+                            <p class="card-text">This cake is made with the finest ingredients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="backgrond" style="background-image: url(images/bg.jpeg);"></div>
+
+        <div class="py-4 my-3 shadow-lg d-flex align-items-center justify-content-center shadow-lg mb-2 w-100"
+            style="background: var(--thir-bg-color);">
+            <h2>all thank and appreciate</h2>
+        </div>
+
+        <div class="container h-100">
+            <div class="row row-cols-1 row-cols-md-3 py-4 gy-4">
+                <div class="col mx-auto">
+                    <div class="card thanks-card bg-dark text-white" style="height: 400px;">
+                        <img src="images/chif1.jpg" class="card-img" style="height: 400px;" alt="...">
+                        <div class="card-img-overlay overlay">
+                            <div class="content">
+                                <p>All thanks and appreciation for</p>
+                                <ul class="blog-list d-flex align-items-center justify-content-start list-unstyled">
+                                    <i class="fa fa-clock px-3"></i> <span>October, 2024</span>
+                                </ul>
+                            </div>
+                            <div>
+                                <img src="images/chif1.jpg" class="position-absolute mb-5 rounded-circle w-25 h-25"
+                                    style="bottom: 10%;" alt="">
+                                <p class="text-white position-absolute bottom-0 text-start ms-3 mt-5">Chef Liam
+                                    Patel<br>
+                                    Chief Food Scientist
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mx-auto">
+                    <div class="card thanks-card bg-dark text-white" style="height: 400px;">
+                        <img src="images/chif2.jpg" class="card-img" style="height: 400px;" alt="...">
+                        <div class="card-img-overlay overlay">
+                            <div class="content">
+                                <p>All thanks and appreciation for</p>
+                                <ul class="blog-list d-flex align-items-center justify-content-start list-unstyled">
+                                    <i class="fa fa-clock px-3"></i> <span>October, 2024</span>
+                                </ul>
+                            </div>
+                            <div>
+                                <img src="images/chif2.jpg" class="position-absolute mb-5 rounded-circle w-25 h-25"
+                                    style="bottom: 10%;" alt="">
+                                <p class="text-white position-absolute bottom-0 text-start ms-3 mt-5">Chef Liam
+                                    Patel<br>
+                                    Chief Food Scientist
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mx-auto">
+                    <div class="card thanks-card bg-dark text-white" style="height: 400px;">
+                        <img src="images/chif3.avif" class="card-img" style="height: 400px;" alt="...">
+                        <div class="card-img-overlay overlay">
+                            <div class="content">
+                                <p>All thanks and appreciation for</p>
+                                <ul class="blog-list d-flex align-items-center justify-content-start list-unstyled">
+                                    <i class="fa fa-clock px-3"></i> <span>October, 2024</span>
+                                </ul>
+                            </div>
+                            <div>
+                                <img src="images/chif3.avif" class="position-absolute mb-5 rounded-circle w-25 h-25"
+                                    style="bottom: 10%;" alt="">
+                                <p class="text-white position-absolute bottom-0 text-start ms-3 mt-5">Chef Liam
+                                    Patel<br>
+                                    Chief Food Scientist
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="py-4 my-3  d-flex align-items-center justify-content-center mb-2 w-100">
+        <h2>Check Our New Collection</h2>
+    </div>
+    <div class="container mt-5">
+        <div class="card card-custom w-100">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card mb-0">
+                        <div class="row g-0 shadow-lg rounded-2">
+                            <div class="col-md-4">
+                                <div class="banner-img">
+                                    <img src="images/asset5.jpeg" class="img-fluid w-100 rounded-start mb-0" alt="...">
+
+                                </div>
+
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Podcast Title</h5>
+                                    <p class="card-text-anmited"> <small class="text-muted"> <i
+                                                class="fa fa-calendar-day fa-4 m-2 text-danger"></i>Mon, May 25th
+                                            2020</small></p>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, dolorem
+                                        quasi doloribus...</p>
+                                    <div class="d-flex align-items-center ">
+                                        <span class="badge badge-custom mr-2 btn-secondary"> <i
+                                                class="fa fa-podcast m-1 ms-2 "></i>Podcast</span>
+                                        <span class="text-bg-warning m-4 bg-secondary text-light p-1 rounded-pill"><i
+                                                class="far fa-clock"></i> 05 mins</span>
+                                        <button class="btn btn-warning btn-sm ml-3 "> <i
+                                                class="fa fa-play-circle m-1 "></i>Play Episode</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="card card-custom w-100">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card mb-0">
+                        <div class="row g-0 ">
+
+                            <div class="col-md-8 ">
+                                <div class="card-body ">
+                                    <h5 class="card-title">Podcast Title</h5>
+                                    <p class="card-text-anmited"> <small class="text-muted"> <i
+                                                class="fa fa-calendar-day fa-4 m-2 text-danger"></i>Mon, May 25th
+                                            2020</small></p>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, dolorem
+                                        quasi doloribus...</p>
+                                    <div class="d-flex align-items-center ">
+                                        <span class="badge badge-custom mr-2 btn-secondary"> <i
+                                                class="fa fa-podcast m-1 ms-2  "></i>Podcast</span>
+                                        <span class="text-bg-warning m-4 bg-secondary text-light p-1 rounded-pill"><i
+                                                class="far fa-clock"></i> 05 mins</span>
+                                        <button class="btn btn-warning btn-sm ml-3 "> <i
+                                                class="fa fa-play-circle m-1 "></i>Play Episode</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="banner-img">
+                                    <img src="images/asset6.jpeg" class="img-fluid w-100 rounded-start mb-0" alt="...">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="card card-custom w-100">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card mb-0">
+                        <div class="row g-0 shadow-lg rounded-2">
+                            <div class="col-md-4">
+                                <div class="banner-img">
+                                    <img src="images/asset7.jpeg" class="img-fluid w-100 rounded-start mb-0" alt="...">
+
+                                </div>
+
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Podcast Title</h5>
+                                    <p class="card-text-anmited"> <small class="text-muted"> <i
+                                                class="fa fa-calendar-day fa-4 m-2 text-danger"></i>Mon, May 25th
+                                            2020</small></p>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, dolorem
+                                        quasi doloribus...</p>
+                                    <div class="d-flex align-items-center ">
+                                        <span class="badge badge-custom mr-2 btn-secondary"> <i
+                                                class="fa fa-podcast m-1 ms-2"></i>Podcast</span>
+                                        <span class="text-bg-warning m-4 bg-secondary text-light p-1 rounded-pill"><i
+                                                class="far fa-clock"></i> 05 mins</span>
+                                        <button class="btn btn-warning btn-sm ml-3 "> <i
+                                                class="fa fa-play-circle m-1 "></i>Play Episode</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">JOIN US</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-center">
+            <div class="col">
+                <div class="card h-100 p-3 shadow  btn-outline">
+                    <h5 class="card-title">Subscribe Now</h5>
+
+                    <i class="fab fa-twitter fa-3x mb-3 text-light "></i>
+                    <p><a href="#" class="stretched-link text-decoration-none text-light">Go to link</a></p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 p-3 shadow  btn-outline">
+                    <h5 class="card-title">Follow</h5>
+
+                    <i class="fab fa-whatsapp fa-3x mb-3 text-light "></i>
+                    <p><a href="#" class="stretched-link text-decoration-none text-light">Go to link</a></p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 p-3 shadow  btn-outline">
+                    <h5 class="card-title">Like the page</h5>
+
+                    <i class="fab fa-linkedin fa-3x mb-3 text-light "></i>
+                    <p><a href="#" class="stretched-link text-decoration-none text-light">Go to link</a></p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 p-3 shadow  btn-outline">
+                    <h5 class="card-title">Watch videos</h5>
+
+                    <i class="fab fa-instagram fa-3x mb-3 text-light  "></i>
+                    <p><a href="#" class="stretched-link text-decoration-none text-light">Go to link</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class=" text-dark py-5 " style="background: var(--thir-bg-color);">
+
+        <div class="container">
+            <div class="row text-center text-lg-start">
+                <div class="col-lg-4 mb-4">
+                    <div class="t d-flex justify-content-start align-items-center">
+                        <img src="images/logoo.png" class="img-fluid w-auto" style="height: 50px; width: 70px;" alt=""
+                            srcset="">
+                        <h5>Good Company</h5>
+                    </div>
+
+                    <hr>
+                    <p>Tel: 000-000-000</p>
+                    <p>Address: EGYPT</p>
+                    <p>Fax: 000-000-000</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="t d-flex justify-content-start align-items-center">
+                        <img src="images/logoo.png" class="img-fluid w-auto" style="height: 50px; width: 70px;" alt=""
+                            srcset="">
+                        <h5>Important Links</h5>
+                    </div>
+                    <hr>
+                    <p><a href="#" class="text-decoration-none text-dark">Visit Us</a></p>
+                    <p><a href="#" class="text-decoration-none text-dark">Take a look</a></p>
+                    <p>Your health is more important</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="t d-flex justify-content-start align-items-center">
+                        <img src="images/logoo.png" class="img-fluid w-auto" style="height: 50px; width: 70px;" alt=""
+                            srcset="">
+                        <h5>Vision</h5>
+                    </div>
+                    <hr>
+                    <p>Services for all</p>
+                    <p>Provide best services</p>
+                    <p>You will be better than before</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center  py-3 mt-4">
+            <p class="mb-0">&copy; 2024 Your Company Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

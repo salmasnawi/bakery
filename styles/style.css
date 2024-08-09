@@ -1,0 +1,146 @@
+:root {
+  --main-bg-color: #b38137;
+  --main-text-color: #fff4f4;
+  --sec-bg-color: #b39152dd;
+  --thir-bg-color: #e2b589;
+}
+body {
+  font-family: "Courgette", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  
+}
+
+
+.btn-outline {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+.navbar-light .navbar-nav .nav-link {
+  color: var(--main-bg-color);
+  z-index: 2222;
+}
+input[type="search" i] {
+  border-color: var(--main-bg-color);
+}
+.card-body {
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  color: black;
+}
+.carousel-caption .card {
+  background-color: rgba(255, 215, 164, 0.5);
+  border: none;
+}
+.icons {
+  width: 50px;
+  height: 50px;
+  border: solid 1px rgb(255, 255, 255);
+  background-color: rgb(255, 200, 141);
+}
+.icons:hover {
+  color: #fffbfb;
+}
+.social-icons {
+  z-index: 1000;
+}
+.navbar img {
+  width: 70px;
+  height: 50px;
+}
+.backgrond {
+  position: relative;
+  background-image: url(../images/c1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 350px;
+}
+.shado {
+  position: relative;
+}
+
+.shado:before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 183, 112, 0.404);
+}
+
+.shado:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 183, 112, 0.441);
+}
+
+.shado:hover:before {
+  height: 100%;
+  width: 100% !important;
+  transition: 1s;
+  z-index: 555555;
+}
+
+.shado:hover:after {
+  height: 100%;
+  width: 100% !important;
+  transition: 1s;
+  z-index: 555555;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.5s ease-in-out;
+}
+
+.overlay:hover {
+  background-color: rgba(255, 189, 127, 0.537);
+  padding-top: 10%;
+}
+.thanks-card {
+  transition: all 0.5s ease-in-out;
+}
+.thanks-card:hover {
+  transform: scale(0.9);
+  background-color: #b38137;
+}
+
+
+.card-body .card-text-anmited:after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  display: block;
+  background-color: #b38137;
+  margin-top: 5px;
+  transition: 0.5s;
+}
+.card-body:hover .card-text-anmited:after {
+  width: 100px;
+}
+.banner-img {
+  overflow: hidden;
+}
+
+.banner-img img {
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.card:hover .banner-img img {
+  transform: scale(1.1, 1.1);
+}
+@media only screen and (max-width: 576px) {
+  .carousel-item img {
+    height: 50vh;
+  }}
